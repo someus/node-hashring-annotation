@@ -49,3 +49,5 @@
 ```
 
 首先根据权重、vnodes数量、主机数量（固定值）得到length，权重和length正比，vnodes数量和length正比。self.ring用来存放所有vnodes的信息，但从代码上看vnodes的数量和给定的vnodes的值并不一致。不过因为vnodes值和length值成正比，所以也可以看作比较合理。
+
+不过上面的代码有点问题： https://github.com/3rd-Eden/node-hashring/issues/44
